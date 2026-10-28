@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+
+<h2>Feedback Form</h2>
+
+<form method="POST">
+    Name:
+    <input type="text" name="name" value="{{ name }}">
+    <br><br>
+
+    Rating:
+    <input type="number" name="rating" min="1" max="5" value="{{ rating }}">
+    <br><br>
+
+    Comments:
+    <textarea name="comments">{{ comments }}</textarea>
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<h3>Submitted Feedback</h3>
+<p>Name: {{ name }}</p>
+<p>Rating: {{ rating }}/5</p>
+<p>Comments: {{ comments }}</p>
+
+</body>
+</html>

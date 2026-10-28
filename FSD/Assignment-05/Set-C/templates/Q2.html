@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Order</title>
+</head>
+<body>
+
+<h2>Product Order Form</h2>
+
+<form method="POST">
+
+    Product Name:
+    <input type="text" name="product" value="{{ product }}">
+    <br><br>
+
+    Quantity:
+    <input type="number" name="quantity" value="{{ quantity }}">
+    <br><br>
+
+    Price:
+    <input type="number" name="price" value="{{ price }}">
+    <br><br>
+
+    <input type="submit" value="Order">
+</form>
+
+<h3>Order Details</h3>
+
+<p>Product Name: {{ product }}</p>
+<p>Quantity: {{ quantity }}</p>
+<p>Price: {{ price }}</p>
+<p>Total Price: {{ total }}</p>
+
+</body>
+</html>

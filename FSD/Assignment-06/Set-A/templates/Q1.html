@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+
+<h2>Student Details</h2>
+
+<p><b>Name:</b> {{ name }}</p>
+
+<p><b>Marks:</b></p>
+
+{% for mark in marks %}
+    {{ mark }}<br>
+{% endfor %}
+
+<p><b>Total Marks:</b> {{ total }}</p>
+<p><b>Average Marks:</b> {{ average }}</p>
+
+</body>
+</html>
